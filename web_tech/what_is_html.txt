@@ -10,20 +10,20 @@ HTMLとは、ウェブページを表示するための形式のこと。
 ブラウザはDNSサーバーから受け取ったIPアドレスを元に、サーバーに要求を送る。
 この時の要求がHTTPリクエストと呼ばれ、リクエスト行、リクエストヘッダー、リクエストボディから構成される。
 
-![request header](https://gyazo.com/1bad10a69916903b4313a90ab9cd4c6c)
+![request header](https://i.gyazo.com/1bad10a69916903b4313a90ab9cd4c6c.png)
 リクエストヘッダには、対応している言語、htmlのバージョン、エンコード方式の情報などが含まれる。
 
-![request body](https://gyazo.com/ee9c5db0fd37be5eb7100894dd86e615)
+![request body](https://i.gyazo.com/ee9c5db0fd37be5eb7100894dd86e615.png)
 リクエストボディには、主にPOST通信時にサーバに送信したい情報が含まれる。
 
 webサーバーにリクエストを送る際、サーバーに対して要求する動作をHTTPメソッドで伝えることができる。
 現在主に使われているのはGETメソッド、POSTメソッドで、GETメソッドはデータの取得、
 POSTメソッドはデータの送信を目的として使用される。
 
-![get method](https://gyazo.com/a66fddf4a0dc6d890bd981bb07d8a9b3)
+![get method](https://i.gyazo.com/a66fddf4a0dc6d890bd981bb07d8a9b3.png)
 GETメソッドを使っている様子
 
-![post method](https://gyazo.com/263b69ccdc4a973483a20e1830b9f3a1)
+![post method](https://i.gyazo.com/263b69ccdc4a973483a20e1830b9f3a1.png)
 POSTメソッドを使っている様子
 
 そうしてブラウザからの問い合わせをサーバーは受け付けた後、HTTPレスポンスを返す。
@@ -31,10 +31,10 @@ HTTPレスポンスは、ステータスコード、レスポンスヘッダ、�
 ステータスコードは特定のHTTPリクエストが正常に完了したかどうかを示すコードである。
 このコードを元に、ブラウザは正しくHTMLを処理できるようになっている。
 
-![response header](https://gyazo.com/7b343616b88885e8fbfe5cadd7112a7c)
+![response header](https://i.gyazo.com/7b343616b88885e8fbfe5cadd7112a7c.png)
 レスポンスヘッダには、使用するhttpのバージョン、文字コードの情報などが含まれる。
 
-![response body](https://gyazo.com/94fdc9ebec79d3ab3329e316f98cf13d)
+![response body](https://i.gyazo.com/94fdc9ebec79d3ab3329e316f98cf13d.png)
 レスポンスボディには、ブラウザが表示するためのHTMLが含まれる。
 
 このような流れで、最終的にブラウザはサーバーから受け取ったHTMLを処理し、
