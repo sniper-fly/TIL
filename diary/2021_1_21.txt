@@ -1,0 +1,28 @@
+1/20進捗
+現場Rails復習 p.101~109
+
+1/21予定
+現場Rails復習 p.110~123
+4章も少しやってみる
+
+復習なのでサクサク進むつもりが、今日はやる気に恵まれず微妙な進捗でした。
+明日からまた頑張るんで許してください。Please don't say "you are lazy".
+明日こそ3章の復習終わらせます。
+
+今日ハマったところ
+VScodeでCtrl + 左クリックでクラス定義にジャンプしたかったので
+https://sunday-morning.app/posts/2020-08-15-vscode-ruby-solargraph
+このページを参考に
+gem install solargraph と各種拡張機能を設定したがうまく動かず。う～ん。
+定義に飛べないとなかなかつらいものがあるなあ。
+
+p.106 params.require(:task).permit(:name, :description)
+のrequire(:task)がいまいちわかんなかった。
+
+p.105 
+= f.submit nil
+これだけのコードで下の結果になるの省略されすぎててわけわからん。。
+<input type="submit" name="commit" value="Create Task" data-disable-with="Create Task">
+2周目でもわからないところはよくわからない。
+ずんずん進むべきなのか、ゆっくりでも逐一調べるべきか。
+あたらしく入ってきた高島さんのペースが速くてビビっている。
