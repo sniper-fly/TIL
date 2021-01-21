@@ -1,0 +1,45 @@
+
+https://pikawaka.com/rails/form_with
+form_withの使い方がわからなかったので参照
+
+<% ~ %> <%= ~ %>のちがい
+前者はRubyのコードが実行されるだけで見た目に影響しない。
+後者は実行したうえで文字列がtagになる。
+slimでは
+ - 
+ =
+ という感じになる
+ https://www.javadrive.jp/rails/template/index5.html
+
+ざっくりやること
+コントローラーでビューに伝えるためのインスタンス変数に格納
+一覧画面の実装
+
+rake routesでアクションやコントローラーの表示
+どのパスでどのようなアクションをとるのかわかる
+
+Railsにおけるアクションとは何か
+controllerに書いてあるメソッドのこと
+routes.rbにはどのリクエストでどのアクションを実施するか書いてある
+
+1/22進捗
+現場Rails p110~124
+3章の復習完！
+
+1/23予定
+現場Rails p126~137（12ページはきついか。。？1周目はとにかく手を動かす。）
+
+今日は何とかノルマ達成して3章を終えました。
+気になったことがあったら逐一調べてたのでめちゃくちゃ時間がかかりました。
+中でもform_withメソッドが難しい。
+例えばnew.html.slimで、
+= form_with model: task, local: true do |f|
+	= f.submit nil, class: 'btn btn-primary'
+こう書いただけで
+<input type="submit" name="commit" value="Create Task" class="btn btn-primary" data-disable-with="Create Task">
+こんな感じにコンパイルされるの、省略されすぎてて、どういう仕組みでこうなってるのか、私、気になります！
+（そろそろきちんと質問フォーラムで聞いてみるか。。）
+
+あと、routes.rbに書かれてるresourcesメソッド。
+これもスマートに設定できるっぽいんだけど、いかんせん暗黙のルールが多すぎて初学者には動きが見えなくてきつい。
+入門書だったら逐一リダイレクトする処理を書いて、慣れたら使うみたいなスタンスでやってほしかったなあ
