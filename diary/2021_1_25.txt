@@ -1,0 +1,16 @@
+
+https://apidock.com/rails/ActionView/Helpers/TextHelper/pluralize
+pluralizeヘルパー関数
+
+pluralize(個数, 文字列)
+文字列を適切に変形してくれる
+
+pluralize(2, "error")
+=> 2 errors
+上記を返す
+
+バリデーションを追加するための手順
+・article.rb（model）にvalidatesメソッドを追加して設定
+・articles.controllerのnewやcreateを変更。saveが上手くいったかどうかで条件分岐。
+・new.html.erbでエラー表示のHTMLを書く@articles.errorsを使う
+
