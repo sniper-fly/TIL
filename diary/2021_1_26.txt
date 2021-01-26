@@ -1,0 +1,111 @@
+<h1>Edit Article</h1>
+
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+	<% if @article.errors.any? %>
+		<div id="error_explanation">
+			<h2>
+				<%= pluralize(@article.errors.count, "erorr")%> prohibited
+			this article from being saved:
+			</h2>
+			<ul>
+				<% @article.errors.full_messages.each do |msg| %>
+					<li><%= msg%></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<%=link_to 'Back to list', articles_path%>
+
+
+
+
+<h1>Edit article</h1>
+
+<%= form_with(model: @article, local: true) do |form| %>
+
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Back', articles_path %>
+
+上記二つ何が違うかわからない。
+要検証。
+
+github, 毎日pushしてるのに草が少ないと思ったら
+ローカルのメアドとgithubで登録しているメアドが一致してないとダメだったらしい。
+追加したら一気に草生えて草。
+
+5章は今までの知識の復習や応用で理解できたが、6章になると急に知らない知識の山。一難去ってまた一難か。
+
+rails generate model Comment commenter:string body:text article:references
+二番目のモデルを追加する
+
+rails generate controller Comments
+モデルにあったコントローラーを作成
+
+
+github, 毎日pushしてるのに草が少ないと思ったら
+ローカルのメアドとgithubで登録しているメアドが一致してないとダメだったらしい。
+追加したら一気に草生えて草。
+
+1/26進捗
+5章の復習と6章
+
+1/27予定
+6章が理解しきれてないので、他のサイト等も参照しつつ説明できるようにする
+
+しかし、Railsガイドが終わらない。実質9章まで。
+5章は今までの知識の復習や応用で理解できたが、6章になると急に知らない知識の山。一難去ってまた一難か。
+```<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+<%= form_with model: @article, local: true do |form| %>```
+これどう違うんだろう、。明日調べるか。
+
+
+フレームワークの開発は巨人の肩に乗る必要がある分、覚えるお約束が多くて
+なかなか自分で設計したりロジックを考えてコードを書いたりするいわゆるプログラミング、
+というより最初は座学と調べ物が中心になってくるからあんまり楽しくない。それでも、
+その巨人の肩に乗る為に、いついかなる時代においても、自由な働き方を求めて進み続けた。
+エンジニアという自由な職業を手にするため、勉強し続けた、名は・・・
