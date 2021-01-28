@@ -1,0 +1,107 @@
+
+思えば、自分がC言語で新しい関数を学ぶときはいかにわかりやすい記事を読むか、より
+自分の環境でひたすら動かして、腑に落ちるまで実験して学ぶことが多い。
+Railsではわかりやすい記事を求めがちで手が止まってるので、自分の環境で動かすことを心がけたい。
+
+uninitialized constant ArticlesController
+なんどタイムリープしてもこういわれるなあ
+
+https://diveintocode.jp/blogs/Technology/NamingRole
+命名規則めっちゃいい
+複数形、単数形でめっちゃ紛らわしい。覚えられん。
+
+
+ルーティングが複数形
+                   Prefix Verb   URI Pattern                                                                              Controller#Action
+                 articles GET    /articles(.:format)                                                                      articles#index
+                          POST   /articles(.:format)                                                                      articles#create
+              new_article GET    /articles/new(.:format)                                                                  articles#new
+             edit_article GET    /articles/:id/edit(.:format)                                                             articles#edit
+                  article GET    /articles/:id(.:format)                                                                  articles#show
+                          PATCH  /articles/:id(.:format)                                                                  articles#update
+                          PUT    /articles/:id(.:format)                                                                  articles#update
+                          DELETE /articles/:id(.:format)                                                                  articles#destroy
+       rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+       rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+     rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#crea[rnakai]% bin/rails routes
+
+ルーティングが単数形
+                   Prefix Verb   URI Pattern                                                                              Controller#Action
+            article_index GET    /article(.:format)                                                                       article#index
+                          POST   /article(.:format)                                                                       article#create
+              new_article GET    /article/new(.:format)                                                                   article#new
+             edit_article GET    /article/:id/edit(.:format)                                                              article#edit
+                  article GET    /article/:id(.:format)                                                                   article#show
+                          PATCH  /article/:id(.:format)                                                                   article#update
+                          PUT    /article/:id(.:format)                                                                   article#update
+                          DELETE /article/:id(.:format)                                                                   article#destroy
+       rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+       rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+     rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+
+	絶対上手くいかない形でわざとエラー起こしながら
+	 勉強するのめっちゃいいな
+
+	 なんか自分でちゃんとRailsの面倒見てる感がある
+
+	 拡張子erbをslimに変えただけで満足した結果
+	 変な表示になりました。
+	 そりゃそうなる。。
+
+	 きちんと現場Rails p88のコマンド
+	 bundle exec erb2slim ~~
+	 しないとダメ
+
+viewsにarticlesっていうディレクトリが、
+コントローラーを作成したときにできる。
+ここにslimをいれないと動かない
+
+現状だと
+resources: articles
+ってやると7つのルーティングができるけど
+例えば
+https://diveintocode.jp/blogs/Technology
+/blogs/Technology/NoroRecognition
+/blogs/Technology/Argument
+みたいにid以外でいろんなページを作りたかったら
+どういう風にルーティングを設定するんだろう
+https://gist.github.com/agnellvj/1209733
+こんなの出てきた。(めんどそう。)
+
+rails g controller Articles 
+
+rails routesしたとき
+rails_service_blobみたいなの邪魔だから消したい。
+
+https://vim-jp.org/vimdoc-ja/motion.html#{
+
+https://vim-jp.org/vimdoc-ja/vimindex.html
+
+みけたさんがvimでは{}で移動できますよ、というから調べたが全然出てこない。
+検索してもqiitaのまとめばかり出てきてしまう。
+そうだ困ったときは公式ドキュメント。いまの俺ならvimなんて完全に支配できるぜ！
+自信満々で「man vim」と検索した、次の瞬間。
+
+その日、俺は思い出した。入力すらできずvimに支配されていた恐怖を。Qiitaの「vimのコマンド一通りまとめてみた」程度で満足していた屈辱を。
+https://vim-jp.org/vimdoc-ja/vimindex.html
+
+1/28進捗
+form_with, resources入れ子はまだ実験できてません。
+基礎固めが重要（さぼりではない）ということで、わざとエラーを起こしながら、
+Railsガイドなどを見ずに検索とマニュアルの力でhello world.
+単数形、複数形を間違えるだけで全然動かなくなったりするので、上記のリンクがめちゃくちゃ参考になった。
+一応、rails routesやマニュアル、命名規則などを参照して、どういうときに何を見ればよいのか、など超基礎的なことはわかるようになってきた。気がする。
+(なんか序盤の草むらでめっちゃレベリングしている感じの進み具合な気がする。。。）
+
+ホントだったらもっと現場Railsで先進んでいる予定だったが、、教科書をなぞる勉強法は向いていないのかもしれない。
+
+1/29予定
+form_with, resources入れ子実験
+CRUD機能を自力で実装
+
+awk使わなくても
+rails routes | grep -v railsでとりあえず消せました。

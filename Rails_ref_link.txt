@@ -1,0 +1,3 @@
+https://diveintocode.jp/blogs/Technology/NamingRole
+紛らわしい命名規則がまとまってる
+
