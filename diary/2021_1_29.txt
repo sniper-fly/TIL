@@ -1,0 +1,22 @@
+1/29進捗
+自作CRUDホームページ制作
+create, read, updateまで
+
+1/30予定
+Destroyまで実装
+resources入れ子を理解（何日目だこれ。。）
+
+「form_with完全に理解しました。」
+
+嘘である。
+
+この男、たしかにurl:, model:の使い方はなんとなくわかったものの
+:scopeをどんな時に使っていいのかわかっていない。
+
+```
+= form_with model: @article, local: true do |form|
+	= form.text_field :title
+	= form.text_field :description
+	= form.submit
+
+form.submitで、なぜファイルによってupdateするのか、createするのか、挙動が違うのかわかっていない。

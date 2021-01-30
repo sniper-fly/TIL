@@ -1,0 +1,85 @@
+rails -p 3001
+
+やりたいこと
+URL
+コントローラ
+
+def new
+	@task = Task.new
+	render :index
+	//render :newが省略されてる！
+end
+
+paramsオブジェクト
+ユーザーの入力値が全部入ってる
+
+params
+{
+	hoge: "aaa",
+	fuga: "bbb",
+	task: {
+		name: "掃除",
+		description: "掃除をします"
+	}
+}
+
+params.require(:task)
+
+byebugっていれるとブレークポイントを設置できる
+データのとり方
+URLに含まれるもの(:id)
+基本的にはformで送信したものが入ってくる
+
+フォームやURLのデータがparamsに入って、
+
+それをeditやcreateアクションやらで
+task = Task.new(task_params) #ここには:name, :textの辞書が入ってる）
+task.save
+
+こうするとデータベースに追加される（Task.find, task.updateの組み合わせだと更新）
+
+で、データベースはrails generateコマンドで、最初に
+rails g model Task name:string description:text(このあとマイグレーションをすることで実際に作られる)
+こんな感じに指定した :name, :description のキーを持つオブジェクトのみを受け付ける。
+
+こんな感じの理解であってるかな。。？
+
+じゃあここに :dead_line みたいなのを後から追加するには？？
+rails generate, migrationをせずに :dead_line を task.saveしたら？？
+
+1/30進捗
+42の共同開発課題で、相方のプルリクの大量の修正点をあげまくる人生だった。
+今日ほとんどプルリクレビューしてたな。。
+
+byebug便利過ぎる。こういう情報ありがてぇ。
+Railsをやったのは最後の輪読会だけだったが、paramsの理解がめっちゃ深まったし、
+最初の草むらでレベル上げまくっていたおかげでかなりよくわかった。
+
+```
+【輪読会で学んだこと、考えたこと】
+フォームやURLのデータがparamsに入って、
+
+それをeditやcreateアクションやらで
+task = Task.new(task_params) #ここには:name, :textの辞書が入ってる）
+task.save
+
+こうするとデータベースに追加される（Task.find, task.updateの組み合わせだと更新）
+
+で、そもそもデータベースはrails generateコマンドで、最初に
+rails g model Task name:string description:text(このあとマイグレーションをすることで実際に作られる)
+こんな感じに指定した :name, :description のキーを持つオブジェクトのみを受け付ける。
+```
+
+こんな感じの理解であってるかな。。？
+
+じゃあここに dead_line:datetime みたいなのを後から追加するには？？
+rails generate, migrationをせずに :dead_line を task.saveしたら？？どうなるんだろう。。
+
+1/31予定
+CRUDのDを実装
+resources入れ子を理解（予定先延ばし３０日チャレンジしてます。）
+42の方の予定が読めないんですが、30分だけでもかならずRailsに触ろうと思います。
+
+エラーをガンガン起こしながら学習することで、困ったときに何をリファレンスとして見ればよいか、
+どう原因を探せばよいか、という感覚が身についたので割となんとかやっていけそう。
+ただ、新しく学習するとまったく知らない記法やメソッドが出てきたり、できりがないですね。
