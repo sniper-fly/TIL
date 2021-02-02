@@ -1,0 +1,51 @@
+あとで読む
+https://dev.akito.io/posts/gem-pry-pry-rails/
+
+>rails generate, migrationをせずに :dead_line を task.save したら？？どうなるんだろう。。
+
+検証しました。
+`params.require(:article).permit(:title, :description)`
+できちんとはじいているようで、title, descriptionのみ追加されました。
+これに
+`.permit(:title, :description, :dead_line)`
+とするとみけたさんのいう通りになりました。
+permitが肝になりそうですね。
+
+updateの引数ってどういう型になっているんだろうと思ったところ
+https://railsguides.jp/active_record_basics.html#update
+
+まあ察するにハッシュで関連付けられたものを変更するってことなんだろうけど
+もっとはっきり型とか書いてくれないものか
+https://linuxjm.osdn.jp/html/LDP_man-pages/man3/printf.3.html
+こんな風にきちっと書いてくれれば迷わないんだが。。
+(Cの呪い)
+
+Railsガイドの例では
+
+update(article_params)
+でarticle_paramsには
+title: タイトル, description: 説明
+って感じでまとまっているはず。
+
+update_allは複数の属性を更新したいとき便利って書いてあるけど
+updateでもよくね？複数できるのでは？
+
+いくらslimのツボを抑えて使えるようになったとはいえ
+そもそもデザインの勉強をしたことがないので
+CSSなどもちろん使えず、
+左上に項目が凝集されたページ作りがち。
+
+どうせ勉強するなら、最低限見た目を整える勉強もせねば..
+
+凝集、と言えば今日友達から
+良いプログラムとは高凝集疎結合である、
+と習いました。
+何かデザインパターンや設計の本でみなさんおすすめあれば聞きたいです。
+
+2/2進捗
+今日は今まで勉強した概念の理解分解再構築を行うため自作CRUDサイトを作っていました
+（ほぼ同じものの焼き直し）
+
+2/3予定
+CRUDのDが終わったらこれやろう。
+https://tech-essentials.work/courses/7/tasks/51
