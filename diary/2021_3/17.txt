@@ -1,0 +1,36 @@
+クラスタとは
+https://www.redhat.com/ja/topics/containers/what-is-a-kubernetes-cluster
+
+単一のサーバだと壊れたときに困るので分散するのがクラスタ
+k8sのクラスタの意味はまだよくわからん。
+
+https://kubernetes.io/ja/docs/tasks/tools/install-kubectl/
+kubectlのインスコ
+
+
+
+https://cybozu.github.io/introduction-to-kubernetes/introduction-to-kubernetes.html
+
+コマンド集
+
+kubectl get pod
+pod一覧表示
+
+kubectl describe pod my-first-pod
+my-first-podは個別のpod名。詳細を確認。エラーも確認できるかも。
+
+kubectl exec -it my-first-pod -- bash
+ポッドの中に入れる。
+
+kubernetesではpod間の通信ができる！
+curl -i http://172.17.0.5/
+my-first-pod   1/1     Running   0          115m   172.17.0.5   minikube   <none>       
+このようなステータスなら、IPアドレス指定でcurlが可能
+
+しかし、podが消えたりしていると困る。安定したアクセスができたほうが良い
+そこで、serviceを使う。
+
+curl -i http://my-first-service/
+このようにservice名で指定した名前でnginxのpodにアクセスできる
+
+
