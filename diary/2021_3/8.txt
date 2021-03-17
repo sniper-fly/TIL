@@ -1,0 +1,39 @@
+https://www.cs.uaf.edu/2017/fall/cs301/reference/x86_64.html
+アセンブリ命令がまとまっている
+クイックリファレンス
+
+https://www.ics.nara-wu.ac.jp/~joe/SSIS-H26/manual.pdf
+アセンブリの日本語マニュアル
+
+http://ings.sakura.ne.jp/prog/
+アセンブリの基礎知識まとめが書いてある
+
+
+https://vanya.jp.net/os/x86call/index.html
+ブラウザで簡易アセンブラを検証できる
+
+https://xtech.nikkei.com/it/members/ITPro/ITBASIC/20021224/1/
+日系のアセンブリ講座
+
+https://www.tutorialspoint.com/assembly_programming/assembly_introduction.htm
+アセンブリのチュートリアル (英語サイト)
+
+https://scrapbox.io/42tokyo-42cursus/%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%96%E3%83%AA%E5%85%A5%E9%96%80_from_42ctf
+アセンブリ入門from 42ctf
+
+https://cs.lmu.edu/~ray/notes/nasmtutorial/
+nasmの英語チュートリアル。linuxとmac両対応。かなりわかりやすい
+
+https://www.mztn.org/lxasm64/amd00.html
+アセンブリの個人まとめブログ
+
+https://zenn.dev/wake/articles/13114fd46affd2c38d88
+ywakeさんのまとめ	
+
+https://scrapbox.io/42tokyo-42cursus/Invitation_to_libasm
+yiwasaさんのまとめ
+
+
+rax とは？
+命令の戻り値が入ってる
+
