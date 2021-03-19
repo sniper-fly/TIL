@@ -1,0 +1,10 @@
+
+minikube start
+minikube dashboard
+
+minikubeはkubernetesの起動。
+kubectlでkubernetesと対話できる
+
+kind:serviceを使うとURLでアクセスできる。安定したアクセスポイントを確保できる。
+
+deploymentではできない模様。
