@@ -1,0 +1,48 @@
+https://qiita.com/nimusukeroku/items/72bc48a8569a954c7aa2
+dockerコマンドのいちらんが載っていてとても役に立つ
+
+https://suin.io/537
+不要なイメージやコンテナの削除
+
+https://qiita.com/pottava/items/970d7b5cda565b995fe7
+alpineで軽量なdocker imageを作る
+軽量にすることでビルドやイメージダウンロードの時間を削減、リソースの削減につながる
+
+https://github.com/stakater/dockerfile-base-alpine/blob/master/3.7/Dockerfile
+dockerfileの参考
+
+
+
+https://www.udemy.com/course/web-application-with-docker-kubernetes/learn/lecture/16049156#content
+
+kubernetesはどんな仕組みで動いているのか？
+
+それぞれの機能を持つリソースサーバがworker nodeと呼ばれ、それらをmaster nodeが一元管理する。
+それぞれはネットワークでつながっている
+master node にアクセスするインターフェースがkubectl
+minikubeはシングルノードなので、masterとworkerの区別がない
+
+kubernetesで扱うリソースは４分類１０種類ある
+
+冗長化とは？
+システムの予備を確保して二重化する。
+
+L4, L7ロードバランサとは？
+違いについて
+https://academy.gmocloud.com/qa/20170810/4591
+
+
+
+kubernetesのリソースまとめ
+[![Image from Gyazo](https://i.gyazo.com/4ffbe4536c1413caeea678a13f2765ca.png)](https://gyazo.com/4ffbe4536c1413caeea678a13f2765ca)
+
+
+マニフェストファイルの構成について
+apiversion
+kind
+metadata
+spec
+の大きく分けて４つ
+
+metadata
+name, namespaceで一意の値になるようにする
