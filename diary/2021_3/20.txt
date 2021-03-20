@@ -46,3 +46,9 @@ spec
 
 metadata
 name, namespaceで一意の値になるようにする
+
+nginxコマンドでnginxを起動できる serviceコマンドはいらない
+nginx -t デバッグ情報
+nginxでスタート
+nginx -s stopで止める
+
