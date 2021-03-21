@@ -1,0 +1,73 @@
+kubernetesで起動時のコマンドの指定ができる
+
+command: ["sh", "-c"]
+args: ["while true; do sleep $(DELAY); done;"]
+
+[kubernetes]
+command
+args
+
+[docker]
+entrypoint
+cmd
+
+に対応している
+
+env:
+で環境変数を渡せる
+
+yamlの書き方について
+https://magazine.rubyist.net/articles/0009/0009-YAML.html#%E9%85%8D%E5%88%97%E3%81%A8%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%81%AE%E3%83%8D%E3%82%B9%E3%83%88
+
+- で配列の要素を並べる
+key: value で辞書の要素を並べる
+
+https://kubernetes.io/ja/docs/concepts/overview/working-with-objects/kubernetes-objects/
+マニフェストの公式ドキュメント
+apiversion
+kind どの種類のオブジェクトをつくるか
+metadata オブジェクトを一意に特定するための情報
+spec オブジェクトの望ましい状態
+
+yamlにおける|
+複数行の文字列を表す
+
+kubectl get pod -w で、watchコマンドを実行したのと同じように、変更があるまで更新し続ける
+
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#container-v1-core
+公式APIリファレンス
+
+group version kindと、ある
+apiversion: core/v1
+kind: pod
+のようにして記載する。
+serviceやpod, replicasetだけじゃなくて本当にいろんなものがある
+どんなfieldを持つかも書いてある
+
+コンテナから出る方法
+exit プロセスを終了してログアウト
+ctrl + p   -->  ctrl + q    プロセスを残してログアウト
+
+Pod⇔ホスト間のファイル転送
+kubectl cp SRC DEST
+
+
+マニフェストファイル
+主要なspecはcontainersとvolume
+
+containers: ひとつのpodに複数のコンテナを立てることができるので複数形。配列を取る。
+	name: コンテナの名前
+	image: とってくるimageの名称。バージョンを含む
+	imagePullPolicy: デフォルトでifNotPresent. Never 
+	command: entrypointを上書き
+	args: cmdを上書き
+	env: 環境変数を追加する
+	volumeMounts: 配列を取る。コンテナへマウントするストレージを取る
+		name: mountPath:をキーに持つ辞書を取る。name はspec.volumes.nameの一致させる。
+
+volumes: 大きく分けて、ボリューム名、データ保存先の２つに分類される。
+hostPath, nfs, configMap, secret, emptyDirなどのいずれかを指定し、マウントしたいストレージ先は
+臨機応変に選択する
+
+name: spec.containers.volumeMounts.nameと一致させる
+

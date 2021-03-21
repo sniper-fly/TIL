@@ -52,3 +52,9 @@ nginx -t デバッグ情報
 nginxでスタート
 nginx -s stopで止める
 
+
+CMDとENTRYPOINTの違い
+https://qiita.com/hihihiroro/items/d7ceaadc9340a4dbeb8f
+entrypointはデフォルトで必ず実行される（--entrypointで一応書き換えは可能）
+cmdはrunを実行したときに上書きができる
+併用することで、entrypointの引数としてcmdを指定できる
