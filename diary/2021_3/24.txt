@@ -1,0 +1,17 @@
+hostPathを用いた volume mountが動かない。
+typeを除外することでエラーは出さなくなるが、マウントがうまくできていない。
+https://www.ytyng.com/blog/kubernetes-ContainerCreating-FailedMount/
+参考ページ
+
+deploymentとは？
+replicasetのバージョン管理。集合体
+
+kubectl rollout undo TYPE/NAME --to-revision=N
+指定したバージョンに戻る
+kubectl rollout history
+ロールバック履歴の確認
+
+clusterIPとNodePortとは？
+
+NodePortがあると、クラスター外部と通信できる。
+https://www.mtioutput.com/entry/kube-what-nodeport
