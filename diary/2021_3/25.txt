@@ -1,0 +1,25 @@
+configMapとは？
+kubernetes上で保存する設定情報
+
+specではなくdataプロパティで管理
+
+コンテナイメージと設定情報の分離
+
+configMapをボリュームとしてマウントすると、動的に変更できる
+https://qiita.com/tkusumi/items/8e31fddda77f93ccfdd8
+
+kubectl edit configmap ~~~
+
+
+persistentVolume
+抽象化定義3項目
+削除時動作
+保存先
+
+persistentVolumeClaim
+
+https://stackoverflow.com/questions/48927312/mountvolume-setup-failed-for-volume-mongo-hostpath-type-check-failed-mongo
+なぜhostPathが、not a directory と言われるのか？
+--vm-driver=dockerで起動しているので、
+hostPathはubuntu上のpathではなくdocker上のpathである。
+
