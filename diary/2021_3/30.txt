@@ -1,0 +1,37 @@
+https://stackoverflow.com/questions/46279260/how-to-debug-any-sh-file-inside-dockerfile
+shファイルのどこで失敗しているのかよくわからないときは-xオプション
+https://shellscript.sunone.me/debug.html
+
+https://qiita.com/daisukeshimizu/items/c01f29f8398cc7f5c396
+シェルスクリプトのデバッグについて
+
+set -x で限定的にデバッグ可能
+
+
+
+minikubeと簡単にファイル共有する方法
+https://minikube.sigs.k8s.io/docs/handbook/filesync/
+
+~/.minikube/files/
+以降で適当なディレクトリ名とかを入れたりすればクラスターに反映される
+
+docker image pruneでnoneを大量削除可能
+
+minikube ssh
+コマンドで、クラスターに簡単アクセス可能
+
+ctrl-Lでclearコマンドと同義
+
+https://minikube.sigs.k8s.io/docs/handbook/pushing/
+ホストからクラスターにdocker imageを送れる
+
+e.g) minikube cache add alpine:latest
+eval $(minikube docker-env) でdocker環境をminikubeにすることができる
+
+
+---
+報告会
+bind-address リモートクライアントアクセス
+
+
+

@@ -1,0 +1,11 @@
+ingressが動かなかったのでaddonを追加
+https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+
+参考になったサイト
+https://stackoverflow.com/questions/63558461/endpoints-default-http-backend-not-found-in-ingress-resource
+
+kubernetes drivers
+https://minikube.sigs.k8s.io/docs/drivers/
+
+
+
