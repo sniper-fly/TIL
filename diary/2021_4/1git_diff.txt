@@ -1,0 +1,30 @@
+git差分を見るときに便利なコマンド
+git 古いブランチ:ファイルパス 比べたいブランチ:ファイルパス
+
+e.g) git diff HEAD..master -- ftps/Dockerfile
+現在チェックアウト中のブランチとmasterを比較する
+
+sleep infinityで無限に待てる
+https://tmtms.hatenablog.com/entry/201909/sleep-infinity
+
+sedについて
+https://it-ojisan.tokyo/sed-e-option/
+-eオプションは置換する文字列パターンを指定する
+sed -e 置換コマンド 入力ファイル
+
+https://www.atmarkit.co.jp/ait/articles/1610/06/news021.html
+sed -i で直接編集できる
+
+MetalLBはどのように使うのか？
+手順に沿ってインストールして、
+service yamlでtype: LoadBalancerとすればよしなにやってくれそう
+metalLBのpodみたいなものがあるわけではない
+
+
+wordpress with lemp
+nginxの設定とかも詳しく書いてある
+https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-on-ubuntu-20-04
+
+https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose
+
+https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-nginx-mariadb-and-php-on-debian-10
