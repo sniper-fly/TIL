@@ -1,0 +1,30 @@
+https://qiita.com/sheepland/items/eb0e4c65aaae70ec4e2f
+resource limitについて
+
+メモリなどのリソースの使用制限をかけないと、無尽蔵に使ってしまって他のプロセスを
+キルしてしまう可能性がある
+
+PersistentVolume, Pod, Secretを作成
+作成したPodに入る
+MongoDBへ接続
+設定したユーザー名/パスワードで認証
+DB一覧を表示
+
+ClusterIP: None
+とすることでHeadLessServiceであることを示す
+
+マニフェストファイルは最初Podとして作成しておいて、
+あとでDeploymentとして書き直せる
+
+kubectl get pod -w でリソースの作成まで
+
+
+nginxとは？
+リバースプロキシサーバーをコア機能に持つ
+
+reverse proxyとは？
+プロキシが社内で代表するモデムのような代理人であるのに対して、
+リバースプロキシはクライアントの要求を各サーバーに振り分ける、
+社内プロキシの逆のような役割をする。
+
+
