@@ -1,0 +1,40 @@
+fastCGIとは？
+
+そもそもCGIとは？
+普通web pageは作ったものを渡すことしかできない
+CGIの仕組みを使うと、リクエストによって作るものが変わる
+
+普通CGIには終了処理と起動処理が必要だが、fastCGIは一度展開したCGIを
+しばらく展開しておくことでロスを減らしている
+
+https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose
+
+step2
+アプリケーションの存続のために環境変数の設定が必要。
+mysqlパスワードなどのセンシティブな情報も含まれるので、
+docker-composeファイルではなく.envファイルに入れとくと良い
+この情報は.gitignore, .dockerignoreしておくとよい。
+
+step3
+docker-composeがrunning containerの情報を特定する。
+どのように動くのか、定義が書かれる。
+
+composeを使うことで、マルチコンテナアプリケーションで共有されたネットワークやvolumesを使うことができる。
+
+wordpressとdatabaseで別のコンテナを作る。
+
+certbotとは？
+証明証発行のやり取りをやってくれるもの
+
+streamline (v) 合理化する
+おなじ
+
+https://www.bnote.net/centos/nginx_conf01.html
+https://www.bnote.net/centos/nginx_conf02.html
+nginxの設定がわかりやすいサイト
+
+find . -type f -name *.log
+とりあえずlogファイルを探そう
+
+tail -f /var/log/nginx/access.log
+同ディレクトリにエラーログもあるのでこれを見ながら作業すると良さげ
