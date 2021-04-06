@@ -1,0 +1,44 @@
+~14
+週3での勤務のお願い文の完成、送信
+	予定：nginxのマニフェストファイルを書く
+		nginxのログを見れない理由を明らかにする
+youtube, pixiv, toilet
+
+https://minikube.sigs.k8s.io/docs/handbook/accessing/
+minikube startする際のportの公開可能範囲を設定できる
+
+1430
+p:全体像の設計。やるべきことの明確化
+a:pod.ymlの作成、pv, pvcのドキュメント読解
+
+15
+g
+
+1530
+p:レアジョブdaily
+a:日本語での返答を書くまで
+
+16
+nap
+
+1630
+p:rarejob仕上げ
+a: ビバディ
+
+17
+rarejob仕上げ
+
+1730
+p: mysql into pod
+a: youtube, chu2byou
+
+18
+p: mysql into pod
+a: 
+
+https://kubernetes.io/ja/docs/tasks/inject-data-application/define-environment-variable-container/
+spec.containers.(env/envFrom) について
+
+
+
+1830

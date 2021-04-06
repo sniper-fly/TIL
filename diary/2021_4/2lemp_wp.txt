@@ -38,3 +38,7 @@ find . -type f -name *.log
 
 tail -f /var/log/nginx/access.log
 同ディレクトリにエラーログもあるのでこれを見ながら作業すると良さげ
+
+https://server-setting.info/centos/nginx-rewrite-debug.html
+リダイレクトでログを残す方法
+
