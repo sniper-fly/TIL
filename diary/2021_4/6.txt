@@ -1,0 +1,10 @@
+https://qiita.com/hclo/items/35f00b266506a707447e
+nginxの基本設定がわかりやすい
+
+https://blog.adachin.me/archives/4177
+alpineではopenrcがデフォルト設定されていないのでここで設定する
+
+http://www2.matsue-ct.ac.jp/home/kanayama/text/nginx/node1.html
+nginxの詳しい設定情報が具体例とともに書いてある
+
+
