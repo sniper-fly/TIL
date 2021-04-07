@@ -1,0 +1,26 @@
+1630
+openrcのダウンロードを行う準備
+nginxのインスコ
+
+1700
+https://www.cyberciti.biz/faq/howto-adding-installing-man-pages-in-alpine-linux/
+alpineでmanを見る方法
+
+1730
+run
+
+18
+p:nginx.conf を手書き, restart 実験で理解
+
+30
+nap
+
+19
+nginxを外部公開
+
+metallb layer2 configについて
+layer2モードはIPアドレスだけ設定すればよい。
+
+ARPとは
+MACアドレスの情報を得られるプロトコル
+
