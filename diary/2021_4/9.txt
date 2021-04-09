@@ -1,0 +1,42 @@
+シェルスクリプトは#!/bin/shがないとloop back off errorになる
+
+https://dev.mysql.com/doc/refman/5.6/ja/tutorial.html
+mysqlの公式日本語tutor
+
+https://dev.mysql.com/doc/refman/5.6/ja/account-names.html
+%はワイルドカード。あらゆるホスト名に一致する
+
+15
+p: mysql serviceの定義
+a: alpineのwiki
+https://wiki.alpinelinux.org/wiki/Main_Page
+
+
+30
+昼寝
+
+16
+nmapコマンドの使い方
+外部のサーバーに対してportが開放されているか調べる
+nmap 172.17.06 -p 80
+
+80番portが開放されているか調べる
+
+1630
+gdgd
+
+17
+run
+
+1730
+hkamiyaさんのservice解読
+
+18
+これまでのserviceを再構築
+
+1830
+wordpressイメージの作成, dockerfileの解読
+curl -Oでremoteと同じfile名で保存
+
+mysqlのlogを残してデバッグする。
+現在はport開放が思うようにできていない感じ
