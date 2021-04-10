@@ -1,0 +1,7 @@
+https://mariadb.com/kb/en/server-system-variables/#log_warnings
+mariadbの起動オプション一覧について
+
+mariadb.confの内容は、代替は上記一覧に記載の起動時のスクリプトで設定可能。
+
+
+
