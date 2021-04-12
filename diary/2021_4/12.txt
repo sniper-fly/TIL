@@ -1,0 +1,52 @@
+
+11
+p: php.confの設定を書き換え,
+a:
+
+1130
+p:
+a:
+
+12
+p:
+a:
+
+1230
+p:
+a:
+
+14
+p: mimetypeとは？
+ブラウザが処理するための拡張子というかファイル形式 
+
+1430
+p: wpコマンドの依存関係について調べる。minikube logでエラーが出てるので分析
+
+15
+
+1530
+
+17
+
+1730
+
+18
+wordpressとphp-fpmを連携するのに役立ったサイト
+https://uteee.com/system/966/
+
+wp core installのurlパラメータが適当に指定されていたので、192.168.49.2:5050に直したら治ったっぽい
+
+wp db createにはmysqlコマンドが使えないとだめみたい
+
+https://developer.wordpress.org/cli/commands/
+wordpressの公式デベロッパー向けのコマンド集
+https://make.wordpress.org/cli/handbook/guides/quick-start/
+
+wpコマンドはいちいちpathを指定する必要はなく、カレントディレクトリがwordpressのインストールディレクトリならよさげ
+
+https://ma.ttias.be/force-redirect-http-https-custom-port-nginx/
+httpをhttpsに強制リダイレクトする設定
+
+https://cstoku.dev/posts/2018/k8sdojo-23/
+kubectl wait コマンドについて
+podの起動順序制御ができる
