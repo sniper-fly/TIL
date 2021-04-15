@@ -1,0 +1,80 @@
+本日やってしまいたいこと
+・mysql永続化
+・pod --> deployment
+・sleepを削除 wp_initの条件分岐で 
+・phpmyadminをうごかす
+
+### 勉強したことまとめ
+phpmyadminで他サーバーに接続する場合はconfig.inc.phpの設定が必要
+nginx.confはほぼ同じものを流用できる
+rc-statusコマンドをはじめに使わないとなぜかエラーが出る。
+reset.shを用意しておくと早い
+
+
+1130
+p: waitのセットとsleepの削除、検証, mysqlの永続データ化
+entry-pointの改名
+
+12
+
+https://stackoverflow.com/questions/56935239/how-to-configure-pod-initialization-in-a-specific-order-in-kubernetes
+k8sの基本概念として、一つ一つのpodは他のpodの状態を気にしなくても済むようにするべき
+sleepするより、失敗したらdeploymentで再起動するほうが良い
+
+1230
+https://www.technipages.com/google-chrome-bypass-your-connection-is-not-private-message
+thisisunsafe
+と打てばマウスにさわらずスキップできる
+
+16
+kmorimtさんのを参考にしつつ、phpmyadminをダウンロードしてみる
+a: sleep
+
+1630
+
+17
+p: image build, 設定ファイルをコピーしてデータベースの確認
+a: 
+
+1730
+p: run
+
+18
+p: Eng
+a:
+
+https://docs.phpmyadmin.net/ja/latest/index.html
+phpmyadminの公式doc
+
+https://qiita.com/wakayama-y/items/a9b7380263da77e51711
+シェルスクリプトでよく使うif文のオプションについて
+
+httpステータスコード302は？
+一時的なサイトリダイレクトを表す。
+永続的なURL変更でなければ基本こちらでよさげ
+
+crash loop back-offとは？
+コンテナのentry-pointが何度も再起動してしまうために、
+deploymentで再起動ループになってしまう
+
+シェルスクリプトは文字列比較と数値比較があり、
+全部=で比較できると思ったら違うみたい。
+https://qiita.com/egawa_kun/items/196cd354c0d8e4e0fefc
+
+wordpressがmysqlに問い合わせる
+--> 準備ができてない 通信ができない
+--> podが異常終了
+--> deploymentが一定時間かけたらまた作ってくれる
+--> mysqlが準備完了
+--> wordpressがmysqlに問い合わせる
+....
+
+lftpっていうコマンドを使う
+vsftpd
+passive通信とactive通信
+
+
+
+
+
+

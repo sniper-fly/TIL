@@ -1,0 +1,42 @@
+nginxの$1, $2とは？
+https://www.gamvaro.com/kswiki/index.php?%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%A2%E4%BF%82/nginx
+
+正規表現の変数化。
+()の数だけ、あとで$1, $2と参照できる
+
+nginx -s reload
+で設定ファイルの再読込ができる
+
+https://memo.willnet.in/entry/2013/05/07/135529
+proxy_redirectについてわかりやすいサイト
+
+
+rewrite ^/phpmyadmin(.+) $1 break;
+/phpmyadmin/hoge  --> hoge
+
+proxy_pass https://phpmyadmin-service:5000;
+https://phpmyadmin-service:5000/hoge を問い合わせる
+
+proxy_redirect / /phpmyadmin/;
+hoge --> /phpmyadmin/hoge に戻してブラウザに返す
+
+
+telegraf.confについて
+hostname
+database のみ違うような感じ。
+それぞれ、nginxなら nginx-service, nginxと書かれている。
+
+https://kubernetes.io/ja/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+liveness probeを使えば、一定時間おきにサーバーがちゃんと生きてるか監視できる
+initシェルスクリプトの中で、サービスが落ちたときにきちんと判定できるのでこちらのほうが便利
+
+influxdbのデフォルトポートは8086
+
+とりあえず今後の動き
+・grafanaのチュートリアル
+・grafana podを立てる
+・influxDB podを立てる
+・telegrafをそれぞれのdockerfileでインスコ
+
+・livenessprobeとhealth check.shを作成
+・ftpsの設定
