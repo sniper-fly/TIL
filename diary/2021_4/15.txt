@@ -1,0 +1,43 @@
+1630
+rarejob
+nap
+
+17
+run
+
+1730
+config settingのtutorを読み終える
+
+
+18
+p:grafanaをpodに入れてみる。
+設定してからconfigファイルを取り出してみる
+a:兎にも角にもinfluxdbがないと動かなそうなので、とりあえずそちらから。
+dockerfileはほぼ定型文で完成
+
+1830
+p:influxdbについて調べる。podが動くか検査。setup.shの追加
+
+19
+p: grafana podを動かしてみる
+
+
+--------------------
+
+provisioning = <path to config files>
+config fileのパスを指定する
+
+https://grafana.com/tutorials/provision-dashboards-and-data-sources/
+config files
+
+provisioning/
+  datasources/
+    <yaml files>
+  dashboards/
+    <yaml files>
+  notifiers/
+    <yaml files>
+
+こんな感じの構造になっている
+
+

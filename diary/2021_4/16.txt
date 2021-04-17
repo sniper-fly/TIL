@@ -1,0 +1,37 @@
+1130
+grafana podを動かす
+dockerfile作成
+設定ファイルを探す
+a: nap 
+12 nap 1230 nap 
+13
+
+
+14 飯休憩 1430 15
+
+1530
+grafana
+
+16
+
+1630
+
+17
+
+1730
+
+18
+
+1830
+
+19
+
+
+https://zenn.dev/tkomatsu/articles/bbb3a4e5f63aae869a74
+tkomatsuさんのマルチサービス立ち上げ記事
+
+https://zenn.dev/tkomatsu/scraps/42e6cd3f96f4e5
+これで解決した。
+lib64自体が存在しないことが原因らしい。
+
+
