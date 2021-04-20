@@ -1,0 +1,90 @@
+influxdの起動の仕方
+- influxd -config <config path>
+- export INFLUXDB_CONFIG_PATH=/etc/influxdb.conf
+
+https://grafana.com/docs/grafana/latest/dashboards/export-import/
+grafana設定のexport方法とおぼしきもの
+
+telegrafをコンテナで起動するときは
+--network hostとつけるとよいらしい？
+
+https://docs.influxdata.com/telegraf/v1.15/administration/configuration/#configuration-file-locations
+telegrafのconfigファイルについて
+
+influxdb公式tutor
+https://docs.influxdata.com/influxdb/v1.8/introduction/get-started/
+
+https://grafana.com/go/webinar/getting-started-with-grafana/?pg=docs-grafana&plcmt=footer-resources-1
+grafanaの公式動画introduction
+
+
+
+------------
+10
+p: wantedly返信
+a: toilet
+
+30
+p: grafana * influxdb動画
+a: wantedly返信
+
+11
+p: dashboardの編集
+a: wantedly返信
+
+30
+p: dashboardの編集
+a: wantedly返信
+
+12
+p: setupに組み込んでテスト
+a: grafana * influxdb動画, influxdbの概要について調べる
+
+30
+p: 飯
+a: influx 公式docの動画閲覧
+
+13
+youtubeQK
+30 k-on
+
+14
+p: rarejob
+a: 歓談
+
+30
+p: rarejob
+a: influxdb confについて学習
+
+15
+寝る
+a: influxdbの使っているばーじょんが違った
+https://docs.influxdata.com/influxdb/v1.8/introduction/get-started/
+v1.8が目当てのもの
+
+30
+p: influxの起動
+RUN
+
+16
+p: ft_serviceのreadmeづくり
+sleep
+
+30
+p: grafanaの完成
+run
+
+17
+p: ftpsの設定、完成品を動かして実験してみる
+run
+
+30
+p: ひとつひとつ設定を理解して0から構築する
+p: 
+
+18
+p: setup.shに組み込んでテスト
+
+30
+ゲーム 
+19
