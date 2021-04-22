@@ -1,0 +1,62 @@
+influxdbに入るには？
+influx -precision rfc3339
+
+https://docs.influxdata.com/influxdb/v1.8/tools/shell/#execute-an-influxql-command-and-quit-with-execute
+influxqlのコマンドをno interfaceで実行
+
+
+
+
+やること
+・influxdbでも予め、各種podのdatabaseを作っておく。
+・kmorimotさんとのdiffをとる
+・世界のgithubを覗いてみる
+・grafanaのエラーログを取得する
+・ftps
+
+
+やったこと
+・telegraf.confのSETTING diffでの比較もバッチリ
+
+
+10 influxに入るコマンドを調べる。influxでデータベースを先に作る。
+爪切り
+
+30 kmorimotさんとのtelegraf.confについてdiffを見て、設定を調べる
+LINE返信(to sakai)
+
+11 違いがわかったら真似る。わからなければ別のgithubを見る
+telegraf.confの違いについて学習、databaseの作成
+
+30 wantedly返信
+
+12 wantedly
+
+30 ご飯
+dashboardのsettingを破棄して再起動。sql文の意味をひとまずは理解する
+13　QK
+
+30　rarejob daily
+
+14 レビュー
+
+30　レビュー
+
+15　寝る
+
+30　各podのdashboardを設定する。自動でできるか確かめる。また、influxdbの永続化。
+
+16　走る
+
+30　積み残し
+
+17　ftpsを調べる。実物を動かしてみる。
+
+30　設定を調べてdockerfileを作る。
+
+18　rarejob残り
+
+30　ご飯
+
+19
+

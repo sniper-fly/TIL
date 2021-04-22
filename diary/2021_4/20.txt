@@ -1,0 +1,8 @@
+telegrafのエラーの量が違うのは、liveness probeで終了しているかの違い？
+--> restartは0なので関係なさそう
+
+やること
+influxdbのpv化
+
+https://grafana.com/docs/grafana/latest/administration/provisioning/
+grafanaのdashboard settingsに関してはここを参照
