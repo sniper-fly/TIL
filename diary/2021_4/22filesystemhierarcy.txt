@@ -1,0 +1,40 @@
+わかったこと
+influxdbは/var/lib/influxdbに入っているのでここを永続化すればおｋ
+
+https://ja.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+ファイルシステム階層標準
+filesystem hierarchy standard
+
+やること
+ftpsの設定
+grafanaのdashboard作成
+influxdb永続化
+livenessprobe
+ゴミファイル削除
+レビュー
+レビュー項目に沿って実験
+
+14 rarejob
+anime
+
+30 grafana dashboard の設定自動化
+rarejob
+
+15 rails udemy30分とりあえず講義受ける, 環境構築
+rarejob
+
+30 レビュー
+rarejob, line返信, wantedly返信
+
+16 grafana dashboardのデザイン
+
+30 RUN
+
+17 寝る
+influxdb永続化, wantedly返信
+
+30 ftpsの設定
+
+18 上完了
+
+30 wantedly返信
