@@ -1,0 +1,52 @@
+https://xtech.nikkei.com/it/article/COLUMN/20140310/542302/
+ftpサーバに接続したときの使えるコマンドリスト
+
+
+やること
+・wantedly返信確認
+・livenessprobeの導入
+・influxdbが落ちる原因の特定
+・ftpsのテスト
+・mod試験導入
+・rarejob
+
+残り
+・grafanaのnginx設定
+・livenessprobeの導入
+・readme
+・
+
+10 ftpsテスト, 各設定の意味を調べてまとめる
+
+30 ftpsを含めてtelegrafの確認
+
+11 livenessprobeの導入
+
+30 同
+
+12 Readmeの作成
+ftpsテスト
+
+30 ご飯
+
+13
+
+30 rarejob
+
+14 レビュー（なければレビュー項目に沿ったチェック
+
+30 同
+
+15 寝る
+
+30 RUN
+
+16 buf
+
+30 mod試験導入
+
+17
+
+30
+
+18

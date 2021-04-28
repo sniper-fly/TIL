@@ -1,0 +1,51 @@
+レビューのときの便利コマンド
+Dockerfileをすべてまとめてcatできると便利
+externalIPがすべて同じかどうか
+curl -li で細かく見れる
+
+
+やること
+本の整理
+粗大ごみ申し込み
+livenessprobeテスト
+vmテスト
+面接質問対策
+rarejob
+
+
+
+1130 こちらからの質問、事業内容を覚える
+=
+
+12 livenessprobe test
+風呂掃除
+
+30 面接対策 質問から自己分析を絡めて応答分を作成
+風呂掃除
+
+13 readme作成
+surfing
+
+30 飯
+sleep
+
+14 面接対策 質問から自己分析を絡めて応答分を作成
+よくある質問
+
+30 rarejob
+
+15 readme
+
+30 rarejob
+
+16 RUN
+
+30 粗大ごみ、本の整理
+
+17 sleep
+
+30 面接対策
+
+18 
+
+30
