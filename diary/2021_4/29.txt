@@ -1,0 +1,52 @@
+できていなかったところ
+
+・influxdbが起動しない。
+発生条件、influxdb podを削除したとき、再起動できない。
+influxdをkillしたとき、再起動しない。（crash loop back off）
+
+・nginxなどが再起動しない。
+kubectl exec deploy/grafana-deployment -- pkill grafana
+・ftpsで外部から接続ができない
+・vmで動かない
+
+やること
+・grafanaの違いを確かめる
+・Dockerイメージレイヤー化
+・外からftp接続ができるかどうか
+・レビュー
+
+10 grafanaの違いを確かめる
+
+30 rarejob
+
+11 grafanaの調整
+
+30 外からftps接続のテスト
+
+12 dockerfileダイエット
+
+30 飯
+
+13 最終確認
+
+30 レビュー 
+
+14 readmeの作成, entrypointの名前変更
+
+30
+
+15
+
+30
+
+16
+
+30
+
+17
+
+30
+
+18
+
+30
