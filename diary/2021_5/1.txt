@@ -1,0 +1,15 @@
+  # annotations:
+  #   metallb.universe.tf/allow-shared-ip: shared
+  この記述とconfig.ymlでの記載を一致させることでexternalIPを一致させることができる
+
+  実験方法
+    annotations:
+    metallb.universe.tf/allow-shared-ip: default
+    annotations:
+      metallb.universe.tf/allow-shared-ip: shared
+
+pasvaddressを追加しても直らなかった。
+pasvaddressの欄をnodeportとして開放してみる
+
+
+

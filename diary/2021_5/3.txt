@@ -1,0 +1,44 @@
+やること
+・service
+	ftpsの設定
+	influxdbでグラフが同じ件
+・discord bot作り方
+・カーテンづくり
+・rarejob
+・面接質問応答
+
+10 rarejob
+
+30 面接応答
+
+11 ftps survey
+
+30 rarejob
+
+12 カーテンづくり
+
+30 飯
+
+13 ftps survey
+
+30 sleep
+
+14 influxdb グラフ修正
+
+30 ||
+
+15 RUN
+
+30 面接応答
+
+16 discord bot
+
+30 面接応
+
+17 discord bot
+
+30 vm導入
+
+18
+
+30
