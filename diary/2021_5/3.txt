@@ -1,3 +1,45 @@
+lftp -e "set ssl:verify-certificate no" ftp://test@192.168.49.54
+
+
+ftp接続の一連のログ
+
+Status:	Disconnected from server
+Status:	Connecting to 192.168.49.2:21...
+Status:	Connection established, waiting for welcome message...
+Status:	Initializing TLS...
+Status:	Verifying certificate...
+Status:	TLS connection established.
+Status:	Logged in
+Status:	Retrieving directory listing...
+Command:	PWD
+Response:	257 "/" is the current directory
+Command:	TYPE I
+Response:	200 Switching to Binary mode.
+Command:	PASV
+Response:	227 Entering Passive Mode (192,168,49,2,117,68).
+Command:	LIST
+Error:	The data connection could not be established: ECONNREFUSED - Connection refused by server
+Error:	Connection timed out after 20 seconds of inactivity
+Error:	Failed to retrieve directory listing
+
+Response:	227 Entering Passive Mode (192,168,49,2,117,68).
+この一文がどういう意味なのか調べた。
+どうやら、117 * 256 + 68 番のportと通信するということらしい。
+30020番portが空いているかどうか調べた。nodePortを指定して開いたら通信できた。
+
+containerの方でcontainer portを指定していない。これが原因でnodePortが必要になっているかのうせいがあるので要実験。
+
+SSL, TLSに問題があるのか？
+暗号鍵作成をftpsのみ変更してみる。
+
+https://www.atmarkit.co.jp/ait/articles/0307/11/news001.html
+
+
+netstat
+
+ls でrws やrwtのsやtは何？
+https://lpic-master.com/suid-sgid-stickybit
+
 やること
 ・service
 	ftpsの設定

@@ -1,0 +1,64 @@
+やることリスト
+・就活応答文
+・rarejob
+・ft_services レビュー準備
+・readme作成
+・discord bot作成
+
+Tue May  4 08:32:23 2021 [pid 597] CONNECT: Client "172.17.0.1"
+Tue May  4 08:32:23 2021 [pid 597] FTP response: Client "172.17.0.1", "220 (vsFTPd 3.0.3)"
+Tue May  4 08:32:23 2021 [pid 597] FTP command: Client "172.17.0.1", "AUTH TLS"
+Tue May  4 08:32:23 2021 [pid 597] FTP response: Client "172.17.0.1", "234 Proceed with negotiation."
+Tue May  4 08:32:23 2021 [pid 597] DEBUG: Client "172.17.0.1", "SSL version: TLSv1.3, SSL cipher: TLS_AES_256_GCM_SHA384, not reused, no cert"
+Tue May  4 08:32:23 2021 [pid 597] FTP command: Client "172.17.0.1", "USER ftptest"
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] FTP response: Client "172.17.0.1", "331 Please specify the password."
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] FTP command: Client "172.17.0.1", "PASS <password>"
+Tue May  4 08:32:23 2021 [pid 596] [ftptest] OK LOGIN: Client "172.17.0.1"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "230 Login successful."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "OPTS UTF8 ON"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "200 Always in UTF8 mode."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "PBSZ 0"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "200 PBSZ set to 0."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "PROT P"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "200 PROT now Private."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "CWD /home/ftptest"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "250 Directory successfully changed."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "TYPE A"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "200 Switching to ASCII mode."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "PASV"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "227 Entering Passive Mode (192,168,49,200,117,69)."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "STOR .zsh_history"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "150 Ok to send data."
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] DEBUG: Client "172.17.0.1", "SSL version: TLSv1.3, SSL cipher: TLS_AES_256_GCM_SHA384, reused, no cert"
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] DEBUG: Client "172.17.0.1", "SSL shutdown state is: SSL_RECEIVED_SHUTDOWN"
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] DEBUG: Client "172.17.0.1", "SSL shutdown state is: 3"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] OK UPLOAD: Client "172.17.0.1", "/home/ftptest/.zsh_history", 39223 bytes, 26110.23Kbyte/sec
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "226 Transfer complete."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "TYPE I"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "200 Switching to Binary mode."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "PASV"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "227 Entering Passive Mode (192,168,49,200,117,68)."
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP command: Client "172.17.0.1", "LIST"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "150 Here comes the directory listing."
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] DEBUG: Client "172.17.0.1", "SSL version: TLSv1.3, SSL cipher: TLS_AES_256_GCM_SHA384, reused, no cert"
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] DEBUG: Client "172.17.0.1", "SSL shutdown state is: NONE"
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] DEBUG: Client "172.17.0.1", "SSL shutdown state is: SSL_SENT_SHUTDOWN"
+Tue May  4 08:32:23 2021 [pid 597] [ftptest] DEBUG: Client "172.17.0.1", "SSL shutdown state is: 3"
+Tue May  4 08:32:23 2021 [pid 598] [ftptest] FTP response: Client "172.17.0.1", "226 Directory send OK."
+
+
+metallbの設定がうまくできていなかった
+
+minikube ipとかぶっているとうまく行かないことがある。
+192.168.49.2とは違うアドレスを指定しないとうまく行かない
+
+
+http://vsftpd.beasts.org/vsftpd_conf.html
+vsftpdの設定が細かくいろいろ載っている
+
+
+https://qiita.com/sonoshou/items/cc2b740147ba1b8da1f3
+netstatで開放しているportの確認ができる
+
+sed等をうまく使ってコメント削除
+cat telegraf.conf | grep -v '^#' | sed '/^$/d' | grep -v '^  #'
