@@ -1,0 +1,3 @@
+kubectl delete -n default pod influxdb-deployment-6c7c64ccd-hw2qs
+
+
