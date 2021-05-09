@@ -1,0 +1,49 @@
+https://qiita.com/kaityo256/items/fadffae00e517efbc8aa
+
+busエラーを起こす方法
+
+やること
+libunitのmakefileを作成
+loadtest関数の完成
+discord bot
+libasm
+カーテン
+
+レビュー
+1030, 1400, 1515, 1630
+
+10 Makefile作成
+
+30 rarejob
+
+11 カーテン
+
+30 loadtest関数作成, アウトライン作成 (コンパイルできるところまで)
+
+12 services, VMでのテスト
+
+30 services提出
+
+13 飯
+
+30 sleep
+
+14 レビュー
+
+30 || 
+
+15 ミーティング
+
+30 ||
+
+16 レビュー
+
+30 RUN
+
+17 レビュー
+
+30 servicesのREADME作成
+
+18 
+
+30
