@@ -13,14 +13,16 @@ libasm
 1030, 1400, 1515, 1630
 
 10 Makefile作成
+tl
 
 30 rarejob
+Makefile
 
 11 カーテン
 
 30 loadtest関数作成, アウトライン作成 (コンパイルできるところまで)
 
-12 services, VMでのテスト
+12 services, VMでのテスト,  memory limitも削除したほうが良さそう
 
 30 services提出
 
@@ -30,19 +32,19 @@ libasm
 
 14 レビュー
 
-30 || 
+30 test作成
 
-15 ミーティング
+15 
 
-30 ||
+30 
 
-16 レビュー
+16 
 
-30 RUN
+30 
 
-17 レビュー
+17 ミーティング
 
-30 servicesのREADME作成
+30 
 
 18 
 
