@@ -1,0 +1,53 @@
+カーテンづくり
+AOJ30min
+VMテスト
+レビュー
+codegym聴講
+キーボード掃除
+
+codetrail
+
+ft_servicesをVMで起動するまでにやったこと
+
+・CPUの数が1個だとそもそもminikubeを起動できないのでVMの設定から変更する
+・権限周りが面倒なので、dockerをsudoなしで使えるようにする
+・ホストマシンのnginxを停止する (systemctl stop nginx)
+・デフォルトのminikube, kubectlはなんかエラーが起きて使えないので最新版のバイナリをダウンロードする
+
+ft_
+
+10 codegym * VMテスト, services提出
+
+30
+
+11
+
+30
+
+12
+
+30
+
+13
+
+30 飯
+
+14 レビュー
+
+30 ||
+
+15 テスト作成
+
+30 sleep
+
+16 RUN
+
+30 AOJ
+
+17 レビュー
+
+30 ||
+
+18 AMA
+
+30
