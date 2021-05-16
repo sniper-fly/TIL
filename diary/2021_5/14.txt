@@ -1,0 +1,38 @@
+やること
+カーテンづくり
+libunitレビュー
+libunit fork & github actions
+philosophersの問題概要を掴む
+rarejob
+
+11 libunit改善
+
+30 デバッグ
+
+12 github actionsの概要をつかむ
+
+30 rarejob
+
+13 飯
+
+30 ||
+
+14
+
+30
+
+15
+
+30
+
+16
+
+30
+
+17
+
+30
+
+18
+
+30
