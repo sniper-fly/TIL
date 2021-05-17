@@ -1,0 +1,52 @@
+ゴキキャップ
+カーテン
+レビュー
+CS50
+キーボード洗浄
+哲学者問題への理解
+rarejob
+独自の関数の仕様理解
+bookscan
+
+https://blog.ef67daisuki.club/2017/05/cxxflags%E3%81%A8cppflags%E3%81%AE%E9%81%95%E3%81%84/
+cxxflagsとcppflagsの違い
+
+CPPFLAGSはC, C++両方で使われてしまうので、インクルードパスなど共通のものに対して使う
+CPPにはCXXFLAGSを使うべし
+
+
+10
+
+30
+
+11 rarejob
+
+30 ||
+
+12 CS50
+
+30 飯
+
+13 哲学者問題
+
+30 カーテン
+
+14 sleep
+
+30 RUN
+
+15 レビュー
+
+30 ||
+
+16 哲学者問題 , subject読み取り
+
+30 ゴキキャップ
+
+17 哲学者問題, 小型の実装
+
+30 bookscan
+
+18 哲学者問題、実装方針づくり
+
+30
