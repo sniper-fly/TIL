@@ -1,0 +1,4 @@
+
+コンストラクタを省略したときに自動で生成されるもの
+https://daily-tech.hatenablog.com/entry/2018/11/21/222526
+

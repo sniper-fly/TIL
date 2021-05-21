@@ -1,0 +1,5 @@
+
+https://www.geeksforgeeks.org/check-if-given-email-address-is-valid-or-not-in-cpp/
+email addressの正規表現
+
+
