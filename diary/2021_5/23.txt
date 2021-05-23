@@ -1,0 +1,13 @@
+// Zombie(void); //コンストラクタがある状態とない状態でコンパイルしたら？
+Zombie(std::string type, std::string name);
+~Zombie(void);
+
+上記のように、デフォルトコンストラクタを削除すると、
+Zombie hoge;
+のように何も引数を指定しない状況でコンパイルが通らなくなる。
+
+http://solid.kmckk.com/doc/skit/current/solid_toolchain/langspec.html#langspec
+https://clang.llvm.org/cxx_status.html
+c/c++の言語規格について
+コンパイラの指定が可能
+

@@ -1,0 +1,42 @@
+
+https://blog.ef67daisuki.club/2017/05/cxxflags%E3%81%A8cppflags%E3%81%AE%E9%81%95%E3%81%84/
+cxxflagsとcppflagsの違い
+
+cppflagsはc++のフラッグという意味ではなく、C/C++のプリプロセッサオプションのこと。
+C, C++両方のコンパイルで使われてしまうので、誤り。
+インクルードパスの指定などに使いどころがある。
+c++でのフラッグを期待したい場合はCXXFLAGSが正しい。
+
+--------------------------------------------------------------------------------
+https://daily-tech.hatenablog.com/entry/2018/11/21/222526
+C++コンストラクタについて
+
+コンストラクタを明示しないと、上記リンクに記載されているデフォルトコンストラクタが4種
+定義される。
+コンストラクタをひとつでも定義すると、自動で定義はされなくなる。
+
+また、デフォルトコンストラクタを定義せず、引数付きのみを定義すると、
+引数なしでの初期化はできなくなる。（コンパイルエラー）
+
+-------------------------------------------------------------------------------
+https://www.geeksforgeeks.org/check-if-given-email-address-is-valid-or-not-in-cpp/
+email addressの正当性評価の正規表現
+bool isValid(const string& email)
+{
+  
+    // Regular expression definition
+    const regex pattern(
+        "(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+");
+  
+    // Match the string pattern
+    // with regular expression
+    return regex_match(email, pattern);
+}
+C++11の機能なので、課題では使えない
+--------------------------------------------------------------------------------
+http://solid.kmckk.com/doc/skit/current/solid_toolchain/langspec.html#langspec
+https://clang.llvm.org/cxx_status.html
+c/c++の言語規格について
+コンパイル時に、コンパイラの指定が可能
+-std=c99 , -std=c++98
+など。
