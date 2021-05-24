@@ -1,0 +1,17 @@
+仕様の理解と動作テスト
+要件定義をまとめて半分ぐらい作る
+プロトタイプを作る
+
+https://www.sejuku.net/blog/25352
+time関数
+time(time_t *tloc)
+srand(time(0));のようにして使う
+
+std::stringの配列にNULLを混ぜたらだめ
+
+http://www9.plala.or.jp/sgwr-t/lib/srand.html
+srandの不具合について
+
+ループの中でrandとsrandをセットで使うと、srand(time(0))が生成するシードが１秒間は
+同じものになってしまう。rand()は呼ぶごとに値が変わるので、srandは最初の一回だけ
+呼び出すようにしよう。

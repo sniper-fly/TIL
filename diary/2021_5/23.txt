@@ -11,3 +11,9 @@ https://clang.llvm.org/cxx_status.html
 c/c++の言語規格について
 コンパイラの指定が可能
 
+https://www.sejuku.net/blog/25352
+time関数
+time(time_t *tloc)
+srand(time(0));のようにして使う
+
+std::stringの配列にNULLを混ぜたらだめ
